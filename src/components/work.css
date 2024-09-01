@@ -1,0 +1,69 @@
+.work-page {
+    text-align: center;
+    background-image: url('/public/wallpaper2.jpg');
+    background-size: cover; /* Ensures the background image covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed during scroll */
+    min-height: 100vh; /* Ensures the background covers the entire viewport height */
+    padding: 50px 0; /* Optional: Adds some padding to the top and bottom */
+    box-sizing: border-box; /* Ensures padding is included in the element's width and height */
+    overflow: hidden; /* Prevents any accidental overflow */
+  }
+  
+  .work-sections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+  }
+  
+  .work-section {
+    width: 35%;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s; /* Adds smooth transition for scale and shadow */
+    border-radius: 15px; /* Adds rounded corners */
+    overflow: hidden; /* Ensures content stays within the rounded borders */
+  }
+  
+  .work-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a soft shadow on hover for a modern effect */
+  }
+  
+  .section-content {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background-color: #f0f0f0;
+    border: 2px solid transparent; /* Makes the initial border invisible */
+    background-clip: padding-box; /* Ensures the gradient border doesn't overlap the content */
+    border-radius: 15px; /* Matches the border-radius of the parent */
+    overflow: hidden; /* Ensures content stays within the borders */
+    background-image: linear-gradient(white, white), linear-gradient(to right, #ff7e5f, #feb47b); /* Creates a gradient border */
+    background-origin: border-box; /* Places the background images inside the border */
+  }
+  
+  .section-image,
+  .section-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the media covers the entire area without distortion */
+    object-position: center; /* Centers the media */
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to make the text stand out */
+    z-index: 1;
+  }
+  

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.photos-page {
+  text-align: center;
+  padding: 100px;
+  background-image: url('/public/bk.jpg');
+  background-size: cover; /* Ensures the background image covers the entire page */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-attachment: fixed; /* Keeps the background image fixed during scroll */
+  min-height: 100vh; /* Ensures the background covers the entire viewport height */
+  box-sizing: border-box; /* Ensures padding is included in the element's width and height */
+  overflow: hidden; /* Prevents any accidental overflow */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Fixed two-column layout */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery-photos img {
+  width: 600px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 20px;
+  margin: 10px; /* Add spacing between images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Change cursor to indicate clickability */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-photos img:hover {
+  transform: scale(1.03); /* Slight zoom on hover for effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item {
+  position: relative;
+  width: 99%;
+  padding-bottom: 60%; /* Adjusted Aspect Ratio */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px; /* Increased border radius for a softer look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 8px; /* Slightly rounded for modern look */
+}
+
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto; /* Allows the modal content to scroll */
+}
+
+.gallery-modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px; /* Increased border radius for a more modern feel */
+  text-align: center;
+  max-width: 90%;
+  max-height: 80%; /* Adjust this to ensure the image doesn't exceed viewport height */
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Ensure container adapts to image size */
+  height: auto;
+}
+
+.carousel-image {
+  width: 900px; /* Adjust the width as needed */
+  height: 700px; /* Adjust the height as needed */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  z-index: 1001;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #eb5e28;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Slightly rounded for modern look */
+  cursor: pointer;
+  z-index: 1002;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #d14c1b;
+}
