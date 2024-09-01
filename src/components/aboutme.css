@@ -1,0 +1,106 @@
+.aboutme-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Ensure padding doesn't add to the height */
+    overflow: hidden; /* Prevent any accidental overflow */
+}
+
+.aboutme-content {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    align-items: center; /* Vertically center the content */
+}
+
+.aboutme-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center; /* Center-align the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+}
+
+.aboutme-text h1 {
+    font-size: 2rem; /* Adjusted font size */
+    margin-bottom: 15px;
+    font-weight: bold; /* Optional: make the heading bold */
+}
+
+.aboutme-text p {
+    font-size: 1rem; /* Adjusted font size */
+    margin-bottom: 15px;
+    color: #333;
+    max-width: 600px; /* Optional: limit the width of the paragraph */
+    line-height: 1.5; /* Improve readability */
+}
+
+.contact-button {
+    background-color: #333;
+    color: white;
+    padding: 8px 16px; /* Reduced padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
+.aboutme-image {
+    flex: 1;
+    max-height: 100%; /* Ensure image fits within the content height */
+    overflow: hidden; /* Hide any overflow from the image */
+}
+
+.aboutme-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.aboutme-image img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .aboutme-content {
+        flex-direction: column; /* Stack content vertically */
+        padding: 10px;
+    }
+
+    .aboutme-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .aboutme-image {
+        margin-top: 20px;
+    }
+
+    .aboutme-text h1 {
+        font-size: 1.5rem; /* Further reduce font size */
+    }
+
+    .aboutme-text p {
+        font-size: 0.9rem; /* Further reduce font size */
+    }
+
+    .contact-button {
+        padding: 6px 12px; /* Adjust button padding */
+    }
+}

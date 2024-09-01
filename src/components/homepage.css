@@ -49,61 +49,44 @@
       letter-spacing: 1px;
     }
   }
-  .footer {
-    background-color: #1a1a1a; /* Slightly lighter dark color for the background */
-    color: white;
-    padding: 5px; /* Reduced padding for a smaller footer */
-    text-align: center;
+  .homepage-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Reduced shadow */
-  }
-  
-  .footer-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.875rem; /* Smaller font size for the footer text */
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    max-width: 1200px; /* Limits the content width for better design on large screens */
-    margin: 0 auto;
+    flex-direction: column;
   }
   
-  .footer-text {
-    font-size: 1.2rem; /* Slightly smaller font size */
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    margin-bottom: 10px; /* Reduced margin to save space */
-    letter-spacing: 1.5px; /* Slightly more letter spacing for elegance */
+  .homepage-footer-icons {
+    margin-top: 5px;
   }
   
-  .social-icons {
-    display: flex;
-    gap: 20px; /* Reduced gap for better spacing between icons */
+  .homepage-footer-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
   
-  .social-icon {
-    width: 30px; /* Reduced icon size */
-    height: 30px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    filter: brightness(0) invert(1); /* Makes sure the icons are white */
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.2); /* Slightly smaller scale effect on hover */
-    opacity: 0.7; /* Slightly lower opacity on hover */
+  .homepage-footer-icons a:hover {
+    color: #EB5E28; /* Hover color for the icons */
   }
   
   @media (max-width: 768px) {
-    .footer-text {
-      font-size: 1rem; /* Smaller font size on mobile */
+    .homepage-footer {
+      font-size: 0.75rem; /* Even smaller font size on mobile */
     }
   
-    .social-icon {
-      width: 25px;
-      height: 25px;
-    }
-  
-    .social-icons {
-      gap: 15px;
+    .homepage-footer-icons a {
+      font-size: 1.25rem; /* Smaller icon size on mobile */
     }
   }
   

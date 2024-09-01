@@ -1,0 +1,70 @@
+.booking-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 150px;
+    text-align: center;
+  }
+  
+  .booking-title {
+    font-size: 2rem;
+    color: #00274d; /* Dark blue color */
+    margin-bottom: 10px;
+  }
+  
+  .booking-subtitle {
+    font-size: 1rem;
+    color: #6c757d; /* Grey color */
+    margin-bottom: 20px;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #00274d;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #adb5bd; /* Light grey placeholder text */
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #00274d; /* Dark blue color */
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #004080; /* Slightly lighter blue on hover */
+  }
+  
