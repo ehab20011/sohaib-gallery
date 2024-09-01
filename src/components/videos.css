@@ -1,0 +1,72 @@
+.videos-page {
+    padding: 100px;
+    background-color: #000; /* Black background for contrast */
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4-column layout */
+    gap: 20px;
+  }
+  
+  .video-item {
+    position: relative;
+    padding-bottom: 100%; /* 1:1 Aspect Ratio */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .video-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .video-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .video-player {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #eb5e28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .close-button:hover {
+    background-color: #d14c1b;
+  }
+  
