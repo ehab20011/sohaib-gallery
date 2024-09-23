@@ -14,7 +14,6 @@ function Videos() {
     { id: 7, thumbnail: '/videothumbnails/7.jpg', src: '/videos/7.mp4' },
     { id: 8, thumbnail: '/videothumbnails/9.jpg', src: '/videos/9.mp4' },
     { id: 10, thumbnail: '/videothumbnails/10.jpg', src: '/videos/10.mp4' },
-    { id: 11, thumbnail: '/videothumbnails/11.jpg', src: '/videos/11.mp4' },
     { id: 12, thumbnail: '/videothumbnails/12.jpg', src: '/videos/12.mp4' },
     { id: 13, thumbnail: '/videothumbnails/13.jpg', src: '/videos/13.mp4' },
     { id: 14, thumbnail: '/videothumbnails/14.jpg', src: '/videos/14.mp4' },
